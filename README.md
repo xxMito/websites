@@ -2,7 +2,6 @@
 
 ***
 Wow!
-Welcome to my awesome repo
-
+Welcome to my repo!
 
 ***
