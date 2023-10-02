@@ -1,0 +1,12 @@
+
+.headerMerged{
+    column-span: 2;
+}
+
+.vetGedrukt {
+    font-weight: bold;
+}
+
+.rowMerged {
+    -ms-grid-row-span: 2;
+}
