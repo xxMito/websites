@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #03283B;
+}
+
+h1 {
+    color: #FB6430;
+    font-size: 2em;
+    margin: none;
+    padding: none;
+}
+
+h2 {
+    margin: none;
+    padding-top: 10px;
+    font-size: 1.5em;
+    color:#03283B;
+}
+
+.logo {
+    width: 200px;
+    margin: 20px;
+}
+
+a {
+    color:#03283B;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#FB6430;
+}
+
+a:visited {
+    text-decoration: underline;
+}

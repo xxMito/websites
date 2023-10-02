@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+
+}
+
+h1 {
+    margin: none;
+    padding: none;
+    font-size: 2em;
+    color: #FB6430;
+}
+
+hr{
+    size: 1px;
+    border-color: #03283B;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+    padding-right: 10px;
+    padding-left: none;
+}
+
+.images img {
+    margin: 15px;
+    opacity: .6;
+    margin: 10px;
+}
+.images img:hover {
+    opacity: 1;
+}
+.images {
+    display: flex;
+    justify-content: flex-start;   
+}
+
+.padding {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color:#03283B;
+}
+a:hover {
+    color:#FB6430;
+}
+a:visited {
+    text-decoration: underline;
+}
+
+.eigenaar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
