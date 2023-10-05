@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les 4 oefening 3</title>
+    <style>
+        body {
+            font-family: cursive;
+        }
+        table{
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+        tr, th, td {
+            border: 1px solid black;
+            height: 50px;
+            margin: 4px;
+            text-align: center;
+            background-color: white;
+        }
+        
+        #grey {
+            background-color: grey;
+        }
+        .wide {
+            width: 200px;
+        }
+        .narrow {
+            width: 100px;
+        }
+
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: greenyellow;
+        }
+        #icon {
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <table summary="Aantal koppen koffie per persoon">
+        <caption>Aantal koppen koffie per persoon</caption>
+        <col>
+        <colgroup class="wide">
+            <col>
+            <col>
+        </colgroup>
+       <colgroup class="narrow">
+            <col>
+        </colgroup>
+        <col 4 5 class="narrow">
+        <tr>
+            <th rowspan="5"><img id="icon" src="images/koffie.jpg" alt="Koffie"></th>
+            <th>Naam</th>
+            <th>Aantal koppen</th>
+            <th>Type</th>
+            <th>Suiker</th>
+            
+        </tr>
+        <tr>
+            <td>Jasper Vervliet</td>
+            <td>10</td>
+            <td>Zo zwart mogelijk</td>
+            <td class="green">Ja</td>
+        </tr>
+        <tr>
+            <td>Maaike van den Bulck</td>
+            <td class="green">15</td>
+            <td>Normaal</td>
+            <td class="red">Nee</td>
+        </tr>
+        <tr>
+            <td>Nele Beerten</td>
+            <td class="red">0</td>
+            <td>Deca</td>
+            <td class="green">Ja</td>
+        </tr>
+        <tr>
+            <td>Anja Raymaekers</td>
+            <td>6</td>
+            <td>Normaal</td>
+            <td class="green">Ja</td>
+        </tr>
+    </table>
+</body>
+</html>
