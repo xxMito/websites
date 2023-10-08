@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les 5 oefening 03</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            width: 50%;
+            
+        }
+        label{
+            font-size: 12px;
+            text-align: left;
+        }
+        legend {
+            background-color: #6A270C;
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+        }
+        fieldset {
+            background-color: #FBEBD8;
+            margin-bottom: 10px;
+        }
+        fieldset div {
+            padding-top: 20px;
+        }
+        #registreren {
+            width: 100%;
+            height: 50px;
+            background-color: #FBEBD8;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="https://tm-statweb.be/forms.php" method="post">
+        <fieldset>
+            <legend>Geslacht</legend>
+            <div>
+                <label for="man">Man
+                    <input type="radio" name="gender" value="man" id="man">
+                </label>
+                <label for="vrouw">Vrouw
+                    <input type="radio" name="gender" value="vrouw" id="vrouw">
+                </label>
+                <label for="ander">Ander
+                    <input type="radio" name="gender" value="ander" id="ander">
+                </label>
+            </div>
+
+        </fieldset>
+        <fieldset  class="input-field">
+            <legend>Kleur ogen</legend>
+
+            <div>
+                <label for="bruin">Bruin
+                    <input type="radio" name="oogkleur" value="bruin" id="bruin">
+                </label>
+                <label for="groen">Groen
+                    <input type="radio" name="oogkleur" value="groen" id="groen">
+                </label>
+                <label for="blauw">Blauw
+                    <input type="radio" name="oogkleur" value="blauw" id="blauw">
+                </label>
+                <label for="grijs">Grijs
+                    <input type="radio" name="oogkleur" value="grijs" id="grijs">
+                </label>
+                
+            </div>
+            
+        </fieldset>
+        <div>
+            <input type="submit" value="Registreren" id="registreren" name="registreren">
+        </div>
+        
+</form>
+</body>
+</html>
