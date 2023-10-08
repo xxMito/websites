@@ -1,0 +1,9 @@
+/* image lightbox */
+.lightbox {
+    display: hidden;
+  }
+  
+  .lightbox:target {
+    display: block;
+  }
+  

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les 5 oefening 05</title>
+    <style>
+      input, select, fieldset {
+            box-sizing: border-box; 
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            width: 20%;
+        }
+        fieldset {
+            box-shadow: 2px 2px 0px lightgray;
+        }
+        input:focus {
+            background-color: lightyellow;
+        }
+        select {
+            max-width: 100%;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <form action="https://tm-statweb.be/forms.php" method="get">
+       
+        <div>
+            <label for="voornaam">Voornaam:
+                <input required type="text" name="voornaam" placeholder="Voornaam" id="voornaam">
+            </label>
+        </div>
+        <div>
+            <label for="familienaam">Familienaam:
+                <input required type="text" name="familienaam" placeholder="Familienaam" id="familienaam">
+            </label>            
+        </div>
+        <div>
+            <label for="adres">Adres:
+                <input required type="text" name="adres" placeholder="Adres" id="adres">
+            </label>            
+        </div>
+        <div>
+            <label for="bruin">Provincie:<br>
+               <select name="provincie" id="provincie">
+                <option value="Antwerpen">Antwerpen</option>
+                <option selected="selected" value="Limburg">Limburg</option>
+                <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+                <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+                <option value="West-Vlaanderen">West-Vlaanderen</option>
+                <option value="Henegouwen">Henegouwen</option>
+                <option value="Luik">Luik</option>
+                <option value="Luxemburg">Luxemburg</option>
+                <option value="Namen">Namen</option>
+                <option value="Waals-Brabant">Waals-Brabant</option>
+               </select>
+            </label>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Geslacht</legend>
+                <div>
+                    <label for="man">Man
+                        <input required type="radio" name="geslacht" value="man" id="man">
+                    </label>
+                    <label for="vrouw">Vrouw
+                        <input required type="radio" name="geslacht" value="vrouw" id="man">
+                    </label>
+                    <label for="ander">Ander
+                        <input required type="radio" name="geslacht" value="ander" id="ander">
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+            
+        <div>
+            <label for="foto">Foto
+                <input required type="file" id="foto" name="foto">
+            </label>
+        </div>
+        <div>
+            <label for="voorwaarden">Ik ga akkoord met de algemene voorwaarden
+                <input required type="checkbox" id="voorwaarden" name="voorwaarden">
+            </label>
+        </div>
+        <div>
+            <input required type="submit" value="Registreren" id="registreren" name="registreren">
+        </div>
+        
+</form>
+</body>
+</html>
