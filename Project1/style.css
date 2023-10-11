@@ -1,8 +1,33 @@
+:root {
+  --black: #101010;
+  --night: #272727;
+  --red: #9b1d60;
+  --lightpurple: #beaae5;
+  --darkpurple: #4a3c90;
+  --lightgrey: #a8b0bd;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+hr {
+  border-color: var(--darkpurple);
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  width: 30%;
+  margin: auto;
+}
+.page-description {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+
+}
+
+
 
 body
 {
@@ -14,8 +39,23 @@ body
   font-family: 'Saira Semi Condensed', sans-serif; 
 }
 
+.pagetitle {
+  text-align: center;
+}
 
+.content {
+  padding-top: 10%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
+/* development page */
+.development-title {
+  padding-top: 6%;
+}
+.development-title h1 {
+  padding: 5px;
+}
 
 /* Website Logo */
 .mylogo {
@@ -36,7 +76,7 @@ body
 }
 
 .contactform input {
-  border: solid #4a3c90;
+  border: solid var(--darkpurple);
     
   border-radius: 0.5em;
   font-family: 'Saira Semi Condensed', sans-serif; 
@@ -44,8 +84,10 @@ body
 }
 
 .contactform input:invalid {
-  border: solid darkred;
+  border: solid var(--red);
+  background-color: var(--red);
 }
+
 
 
 
@@ -53,8 +95,12 @@ body
 /* top nav bar */
 
 .topnav {
-  background-color: #232323;
+  background-color: var(--night);
   overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
 }
 .topnav a {
   float: left;
@@ -65,13 +111,25 @@ body
   font-size: 17px;
   font-size: 23px;
 }
+
+
+/* links op de site */
+.glow a:hover, .links-menu a:hover {
+  text-shadow: 
+  0 0 5px var(--red), 0 0 10px var(--red), 
+  0 0 20px var(--red), 0 0 40px var(--red);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: var(--lightpurple);
+  color: var(--darkpurple);
 }
 .topnav a:hover {
-  color: #4a3c90;
+  color: white;
 }
 
 .topnav img {
@@ -132,3 +190,184 @@ body
   opacity: 1;
 }
 
+.links-menu {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+.links-menu > div {
+  text-align: center;
+  width: 100px;
+}
+.links-menu a {
+  font-size: 20px;
+  color: var(--lightgrey);
+  text-decoration: none;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+}
+
+/* image grid */
+.image-flexbox {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.image-flexbox img {
+  object-fit: cover;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.image-flexbox > span {
+  justify-content: center;
+}
+
+.image-text {
+  position: static;
+}
+
+
+/* logo slider */
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0;
+  background: #212121;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), #212121);
+}
+.logos:after {
+  right:0;
+  background: linear-gradient(to right, rgba(255,255,255,0), #212121);
+}
+
+.logos:hover > .logos-slide{
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+}
+
+@keyframes slide {
+  from  {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/* image lightbox */
+.lightbox {
+  display: hidden;
+}
+
+.lightbox:target {
+  display: block;
+}
+
+
+
+
+/* dropdown menu */
+ /* Navbar container */
+ .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
