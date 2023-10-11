@@ -14,6 +14,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.mito-detiege-statwebbe.webhosting.be
+        server: ftp.mito-detiege-statwebbe.webhosting.be/www
         username: mito-detiege-statwebbe@mito-detiege-statwebbe
         password: ${{ secrets.FTP_PASSWORD }}
