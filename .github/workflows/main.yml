@@ -13,4 +13,4 @@ jobs:
       with:
         server: ftp.mito-detiege-statwebbe.webhosting.be
         username: mito-detiege-statwebbe@mito-detiege-statwebbe
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.FTP_PASSWORD }}
