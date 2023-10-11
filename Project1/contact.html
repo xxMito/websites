@@ -12,46 +12,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="topnav">
-        <div class="hamburger">
-           <nav role="navigation">
-               <div id="menuToggle">
-                   
-                   <div class="topnav">
-                       <a href="index.html">Home</a>
-                       <a href="ervaring.html">Ervaring</a>
-                       <a href="cv.html">CV</a>
-                       <a href="interesses.html">Interesses</a>
-                       <a href="contact.html" style="float: right;">Contact</a> 
-                       <a href="index.html" ><img src="images/Home/logo_hr.png" alt="Mito"> </a>
-                   </div>
-
-               </div>
-           </nav>
-       </div> 
-
-
-        <!-- logo -->
-        
+   <!-- topnav -->
+    <div class="topnav glow">
+        <a href="index.html" ><img src="images/Home/logo_hr.png" alt="Mito"> </a>
+        <a href="index.html">Home</a>
+        <a href="ervaring.html">Ervaring</a>
+        <a href="cv.html">CV</a>
+        <a href="interesses.html">Interesses</a>
+        <a href="contact.html" style="float: right;">Contact</a> 
     </div>
-
-<div class="contactform">
-    <form action="https://tm-statweb.be/sendmail.php" method="post" enctype="application/x-www-form-urlencoded">
-        
-        <div><label for="naam">Naam</label></div>
-        <div><input type="text" id="naam" name="naam"></div>
-        
-        <div><label for="email">Email-adres</label></div>
-        <div><input type="email" id="email" name="email" required></div>
-        <div><label for="subject">Onderwerp: </label></div>
-        <div><input type="text" id="subject" name="subject"required></div>
-        <div><label for="message">Bericht: </label></div>
-        <div><textarea name="message" id="message" cols="40" rows="5" required></textarea></div>
-
-        <input type="hidden" name="studentemail" value="r1002659@student.thomasmore.be">    
-        <div><input type="submit" value="Verzenden"></div>
-    </form>
+    
+<div class="content">
+    <div class="contactform">
+        <form action="https://tm-statweb.be/sendmail.php" method="post" enctype="application/x-www-form-urlencoded">
+            
+            <div><label for="naam">Naam</label></div>
+            <div><input type="text" id="naam" name="naam"></div>
+            
+            <div><label for="email">Email-adres</label></div>
+            <div><input type="email" id="email" name="email" required></div>
+            <div><label for="subject">Onderwerp: </label></div>
+            <div><input type="text" id="subject" name="subject"required></div>
+            <div><label for="message">Bericht: </label></div>
+            <div><textarea name="message" id="message" cols="40" rows="5" required></textarea></div>
+    
+            <input type="hidden" name="studentemail" value="r1002659@student.thomasmore.be">    
+            <div><input type="submit" value="Verzenden"></div>
+        </form>
+    </div>
 </div>
+
     
 </body>
 </html>
