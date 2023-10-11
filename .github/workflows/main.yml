@@ -1,4 +1,6 @@
 on: push
+paths:
+      - Project1/**
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
