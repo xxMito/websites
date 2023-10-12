@@ -11,59 +11,88 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- topnav -->
-    <div class="topnav">
-        <div class="hamburger">
-           <nav role="navigation">
-               <div id="menuToggle">
-                   
-                   <div class="topnav">
-                       <a href="index.html">Home</a>
-                       <a href="ervaring.html">Ervaring</a>
-                       <a href="cv.html">CV</a>
-                       <a href="interesses.html">Interesses</a>
-                       <a href="contact.html" style="float: right;">Contact</a> 
-                       <a href="index.html" ><img src="images/Home/logo_hr.png" alt="Mito"> </a>
-                   </div>
+    <header>
+        <!-- topnav -->
+        <div class="topnav glow">
+            <a href="index.html" ><img src="images/Home/logo_hr.png" alt="Mito"> </a>
+            <a href="index.html">Home</a>
+            
+            
+            <div class="dropdown">
+                <a href="ervaring.html">Ervaring</a>
+                <div class="dropdown-content">
+                    <a href="development.html">Development</a>
+                    <a href="grafisch.html">Grafisch</a>
+                    <a href="stages.html">Stages</a>
+                </div>
+            </div>
 
-               </div>
-           </nav>
-       </div> 
+
+            <a href="cv.html">CV</a>
+            <a href="interesses.html">Interesses</a>
+            <a href="contact.html" style="float: right;">Contact</a>
+        </div>
+    </header>
+
+
+    <div class="content">
+
+        <h1 class="pagetitle">Interesses</h1>
+        <hr> 
+        <!-- some spacing -->
+        <br>
+        <div class="page-description">
+            <h3>
+                In mijn vrije tijd heb ik veel hobby's en interesses!
+                Hieronder zie je een aantal voorbeelden!
+            </h3>
+        </div>
+        <!-- some spacing -->
+        <br><br><br>
+
+       <!-- image slider 1 -->
+       
+       
+            <section class="container" style="float: right;">
+                <div>
+                    <h1>Pretparken</h1>
+                    <p>Prachtige thematisering, epische muziek, en spannende attracties... <br> 
+                    In een pretpark voel ik mij altijd thuis. Ik ben steeds op zoek naar de meest intense en engste attracties. <br>
+                    Mijn favoriete pretpark is Phantasialand, waar ze op een redelijk kleine oppervlakte meerdere prachtige themagebieden hebben gebouwd. 
+                    </p>
+                </div>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="Analyse/assets/hobbies_interesses/Chiapas-min.jpg" alt="Foto van Chiapas in Phantasialand">
+                    <img id="slide-2" src="Analyse/assets/hobbies_interesses/toverland-min.jpg" alt="Foto van Pixarus in Toverland">
+                    <img id="slide-3" src="Analyse/assets/hobbies_interesses/Chiapas2-min.jpg" alt="Foto van Chiapas in de winter">
+        
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- image container 2 -->
+        <div style="float: left;"></div>
+        <section class="container" style="float: left;">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide2-1" src="Analyse/assets/hobbies_interesses/piano.jpg" alt="Foto van Chiapas in Phantasialand">
+                    <img id="slide2-2" src="Analyse/assets/hobbies_interesses/crafts-min.jpg" alt="Foto van Pixarus in Toverland">
+                    <img id="slide2-3" src="Analyse/assets/hobbies_interesses/japanse_tuin-min.jpg" alt="Foto van Chiapas in de winter">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide2-1"></a>
+                    <a href="#slide2-2"></a>
+                    <a href="#slide2-3"></a>
+                </div>
+            </div>
+        </section>
     </div>
-
-
-    <div style="float: left;"></div>
-    <section class="container" style="float: right;">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slide-1" src="Analyse/assets/hobbies_interesses/Chiapas-min.jpg" alt="Foto van Chiapas in Phantasialand">
-                <img id="slide-2" src="Analyse/assets/hobbies_interesses/toverland-min.jpg" alt="Foto van Pixarus in Toverland">
-                <img id="slide-3" src="Analyse/assets/hobbies_interesses/Chiapas2-min.jpg" alt="Foto van Chiapas in de winter">
-    
-            </div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-            </div>
-        </div>
-    </section>
-
-    <div style="float: left;"></div>
-    <section class="container" style="float: left;">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slide2-1" src="Analyse/assets/hobbies_interesses/piano.jpg" alt="Foto van Chiapas in Phantasialand">
-                <img id="slide2-2" src="Analyse/assets/hobbies_interesses/crafts-min.jpg" alt="Foto van Pixarus in Toverland">
-                <img id="slide2-3" src="Analyse/assets/hobbies_interesses/japanse_tuin-min.jpg" alt="Foto van Chiapas in de winter">
-            </div>
-            <div class="slider-nav">
-                <a href="#slide2-1"></a>
-                <a href="#slide2-2"></a>
-                <a href="#slide2-3"></a>
-            </div>
-        </div>
-    </section>
 
 </body>
 </html>
