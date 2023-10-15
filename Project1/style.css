@@ -57,11 +57,6 @@ hr {
   padding: 5px;
 }
 
-table tr td th{
-  border: 0px;
-  border: none;
-}
-
 table img {
   height: 500px;
 }
@@ -452,5 +447,27 @@ a:hover {
 }
 
 
-
-
+/* interesses pagina */
+.interesses-wrapper {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  width: 80%;
+  margin: auto;
+}
+#text-left {
+  grid-column-start: 1;
+  grid-column-end: 3; 
+}
+#text-right {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.interesses-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.interesses-wrapper .text {
+  column-span: 2;
+}
