@@ -1,3 +1,4 @@
+/* algemene styling */
 :root {
   --black: #101010;
   --night: #272727;
@@ -12,6 +13,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body
+{
+  margin: 0;
+  padding: 0;
+
+  background: #101010;
+  color: #cdcdcd;
+  font-family: 'Saira Semi Condensed', sans-serif; 
+}
+
 hr {
   border-color: var(--darkpurple);
   border-radius: 5px;
@@ -25,18 +37,6 @@ hr {
   margin: auto;
   text-align: center;
 
-}
-
-
-
-body
-{
-  margin: 0;
-  padding: 0;
-
-  background: #101010;
-  color: #cdcdcd;
-  font-family: 'Saira Semi Condensed', sans-serif; 
 }
 
 .pagetitle {
@@ -57,6 +57,21 @@ body
   padding: 5px;
 }
 
+table tr td th{
+  border: 0px;
+  border: none;
+}
+
+table img {
+  height: 500px;
+}
+a {
+  color: var(--lightpurple);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--red);
+}
 /* Website Logo */
 .mylogo {
   width: 250px;
@@ -74,6 +89,19 @@ body
   animation-iteration-count: 1;
   animation: bounce 1s;
 }
+
+@keyframes bounce {
+  0% {
+      transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(.8, .6);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+} 
 
 /* contact form */
 .contactform {
@@ -425,15 +453,4 @@ body
 
 
 
-@keyframes bounce {
-  0% {
-      transform: scale(1, 1);
-  }
-  30% {
-    transform: scale(.8, .6);
-  }
-  50% {
-    transform: scale(1.1, 1.1);
-  }
 
-} 
