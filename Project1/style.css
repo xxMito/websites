@@ -375,6 +375,7 @@ body
   background-color: var(--night);
   height: 350px;
   
+  
 }
 .card p {
   height: 50px;
@@ -395,7 +396,7 @@ body
 .card img {
   border-radius: 10px;
   height: 220px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .card:hover {
@@ -421,8 +422,7 @@ body
   border-radius: 10px;
   transform: translateX(10%);
 }
-.card a {
-}
+
 
 
 @keyframes bounce {
