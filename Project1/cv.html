@@ -16,6 +16,31 @@
             width: 60%;
             margin: auto;
         }
+        .scholen-met-maps {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            gap: 20px;
+        }
+        .skills {
+            font-size: 23px;
+        }
+        .skills td, tr {
+            border: solid 2px;
+            border-radius: .2em;
+            padding: 10px;
+            text-align: center;
+        }
+        .skills th {
+            text-align: left;
+        }
+        caption {
+            caption-side: top;
+            text-align: left;
+            font-size: 30px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -27,7 +52,11 @@
             
             
             <div class="dropdown">
-                <a href="ervaring.html">Ervaring</a>
+                <a href="ervaring.html">Ervaring 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </a>
                 <div class="dropdown-content">
                     <a href="development.html">Development</a>
                     <a href="grafisch.html">Grafisch</a>
@@ -52,31 +81,9 @@
         <br><br><br>
 
         <div class="cv">
-            <h1>Stages</h1>
-            <h3>Stage Kenterwerk</h3>
-            <p>    
-                Bouw kunstwerk: Hier heb ik kennis kunnen maken met houtbewerking en bouw.
-                Ik vond het heel leuk om mee te hebben gewerkt aan het kunstwerk beneden aan de Citadel in Diest.
-            </p>
-            <h3>Stage studio mocka</h3>
-            <p>    
-                Logos en folders ontwerpen
-            </p>
-            <h3>Studentenjob Intronics</h3>
-            <p>    
-                Database onderhouden, inventaris nakijken
-            </p>
-            <h3>Stage Kunlabora</h3>
-            <p>
-                Angular web-applicatie
-                Typescript, HTML, CSS, Node
-            </p>
-            <h3>Stage Epic Frame</h3>
-            <p>Illustraties maken
-                Adobe CC, Photoshop 
-            </p>
+           
             
-            <h3>Persoonlijke Eigenschappen</h3>
+            <h1>Persoonlijke Eigenschappen</h1>
             <p>
                 Ik ben leergierig en probeer altijd geinteresseerd mee te volgen en nieuwe dingen te leren. <br>
                 Als een opdracht me interesseerd wil ik me er in verdiepen en er veel over leren.
@@ -84,31 +91,89 @@
                 Anderen helpen geeft me een goed gevoel, ik merk soms dingen op die anderen niet zien.
                 Orde en netheid zijn voor mij heel belangrijk.
             </p>
-            
-            <h3>Skills</h3>
+            <br>
+            <h1>Talenkennis</h1>
+            <p>Engels, Nederlands en een beetje Japans</p>
+            <br>
             <p>
-                Python (9/10)
-                MS Office (9/10)
-                Adobe CC (7/10)
-                Kotlin (6/10)
-                Angular, node, typescript (8/10)
+                <table class="skills" summary="Mijn skills binnen IT" >
+                    <caption>Mijn skills</caption>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>8/10</td>
+                    </tr>
+                    <tr>
+                        <td>MS Office</td>
+                        <td>9/10</td>
+                    </tr>
+                    <tr>
+                        <td>Adobe CC</td>
+                        <td>8/10</td>
+                    </tr>
+                    <tr>
+                        <td>Kotlin</td>
+                        <td>6/10</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>7/10</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>8/10</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>6/10</td>
+                    </tr>
+                    <tr>
+                        <td>Node</td>
+                        <td>4/10</td>
+                    </tr>
+
+                </table>
             </p>
-            
-            Opleiding
-            Kindsheid Jesu Hasselt 
-            ASO Wetenschappen Wiskunde
-            De Lift Education Diest
-            Informatica
-            Programming
-            Multimedia
-            Techniek
-            CVO Volt Diest
-            ICT Programmeren
-            Middelbaar diploma Examencommissie 
-            
+            <br>
+            <h1>Opleiding</h1>
+            <p>
+                Mijn middelbaar diploma heb ik behaald bij de examencommissie in Brussel, en het CVO in diest.
+                <br>Momenteel studeer ik Graduaat Programmeren bij Thomas More in Lier.
+            </p>
+            <br>
+
+            <div class="scholen-met-maps">
+                
+                <div>
+                    
+                    <div>
+                        <p>
+                            <h2>De Lift Education Diest</h2>
+                            IT-school voor jongeren met Autisme Spectrum Stoornis
+                            <br>
+                            Hier leerde ik programmeren, 2d/3d ontwerp/tekenen
+                        </p>
+                    </div>
+                    <iframe width="300px" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.8421217068103!2d5.043106176548516!3d50.9837872488198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c13f2dcce522cb%3A0x4bcfb1ba86a3710f!2sDeLift%20Education!5e1!3m2!1sen!2sbe!4v1697457599289!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                <div>
+                    <div>
+                        <p>
+                            <h2>Kindsheid Jesu Hasselt</h2>
+                            Middelbare school in Hasselt
+                            <br>Hier deed ik
+                            ASO Wetenschappen Wiskunde
+
+                        </p>
+                    </div>
+                    <iframe width="300px" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.7821126474728!2d5.347252349805467!3d50.95167691957496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c12167888f99dd%3A0xdc30e45124db6c0f!2sScholen%20Kindsheid%20Jesu!5e1!3m2!1sen!2sbe!4v1697457580122!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
-
 </div>
-
 </body>
 </html>
