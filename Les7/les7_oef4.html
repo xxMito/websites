@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+    <style>
+        .side {
+            width: 40%;
+        }
+
+        .main {
+            width: 60%;
+        }
+
+        .even {
+            width: 25%;
+        }
+
+        .column {
+            padding: 15px;
+            float: left;
+            box-sizing: border-box;
+        }
+        
+        .row::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column main">
+            <h1>Column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque non quas beatae illum distinctio ad saepe ut, perspiciatis esse. Vero obcaecati molestiae, voluptatibus suscipit aspernatur sapiente delectus non natus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores illum veritatis adipisci, voluptatem eligendi magnam cumque maiores ut consectetur nisi recusandae sed vero! Est eaque culpa maxime voluptatem itaque.
+            </p>
+        </div>
+        <div class="column side">
+            <h1>Column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque non quas beatae illum distinctio ad saepe ut, perspiciatis esse. Vero obcaecati molestiae, voluptatibus suscipit aspernatur sapiente delectus non natus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores illum veritatis adipisci, voluptatem eligendi magnam cumque maiores ut consectetur nisi recusandae sed vero! Est eaque culpa maxime voluptatem itaque.
+            </p>        
+        </div>
+    </div>
+    <div class="row">
+        <div class="column even">
+            <h1>Column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque non quas beatae illum distinctio ad saepe ut, perspiciatis esse. Vero obcaecati molestiae, voluptatibus suscipit aspernatur sapiente delectus non natus.</p>
+        </div>
+        <div class="column even">
+            <h1>Column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque non quas beatae illum distinctio ad saepe ut, perspiciatis esse. Vero obcaecati molestiae, voluptatibus suscipit aspernatur sapiente delectus non natus.</p>
+        </div>
+        <div class="column even">
+            <h1>Column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque non quas beatae illum distinctio ad saepe ut, perspiciatis esse. Vero obcaecati molestiae, voluptatibus suscipit aspernatur sapiente delectus non natus.</p>
+        </div>
+        <div class="column even">
+            <h1>Column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque non quas beatae illum distinctio ad saepe ut, perspiciatis esse. Vero obcaecati molestiae, voluptatibus suscipit aspernatur sapiente delectus non natus.</p>
+        </div>
+    </div>
+</body>
+</html>

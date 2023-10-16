@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+    <style>
+        body {
+            background-color: grey;
+            text-align: center;
+        }
+        .yellow {
+            position: absolute;
+            background-color: yellow;
+            height: 100px;
+            width: 50%;
+            z-index: 1;
+        }
+        .red {
+            position: absolute;
+            background-color: red;
+            height: 200px;
+            width: 75%;
+            padding: 5px;
+        }
+        .white {
+            position: absolute;
+            background-color: white;
+            height: 300px;
+            width: 50%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="white">
+        <div class="red">
+            <div class="yellow">Hello world</div>
+        </div>
+    </div>
+</body>
+</html>

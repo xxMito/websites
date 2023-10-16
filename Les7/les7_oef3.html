@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+    <style>
+        .column {
+            padding: 15px;
+            float: left;
+            box-sizing: border-box;
+        }
+        .side {
+            width: 30%;
+        }
+        .main {
+            width: 70%;
+        }
+        
+        .row::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        @media only screen and (max-width: 600px){
+            .side,
+            .main {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+
+        <div class="column side">
+            <h1>Column</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae hic quibusdam reprehenderit quam harum cupiditate. Ea corrupti provident enim tempore rem numquam eius expedita, dignissimos incidunt id doloremque porro dolor!</p>
+        </div>
+        <div class="column main">
+            <h1>Column</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae hic quibusdam reprehenderit quam harum cupiditate. Ea corrupti provident enim tempore rem numquam eius expedita, dignissimos incidunt id doloremque porro dolor!</p>
+        </div>
+    </div>
+</body>
+</html>
