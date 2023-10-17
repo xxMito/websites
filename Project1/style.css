@@ -49,17 +49,7 @@ hr {
   padding-right: 15px;
 }
 
-/* development page */
-.development-title {
-  padding-top: 6%;
-}
-.development-title h1 {
-  padding: 5px;
-}
-
-table img {
-  height: 500px;
-}
+/* links */
 a {
   color: var(--lightpurple);
   text-decoration: none;
@@ -67,6 +57,20 @@ a {
 a:hover {
   color: var(--red);
 }
+
+/* development page */
+.development-title {
+  padding-top: 6%;
+}
+.development-title h1 {
+  padding: 5px;
+}
+.development-content {
+  width: 60%;
+  margin: auto;
+}
+
+
 /* Website Logo */
 .mylogo {
   width: 250px;
@@ -117,12 +121,7 @@ a:hover {
   background-color: var(--red);
 }
 
-
-
-
-
 /* top nav bar */
-
 .topnav {
   background-color: var(--night);
   overflow: show;
@@ -139,19 +138,6 @@ a:hover {
   text-decoration: none;
   font-size: 23px;
 }
-
-
-/* links op de site */
-.glow a:hover, .links-menu a:hover {
-  text-shadow: 
-  0 0 5px var(--red), 0 0 10px var(--red), 
-  0 0 20px var(--red), 0 0 40px var(--red);
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-}
-
-
-/* Add a color to the active/current link */
 .topnav a.active {
   background-color: var(--lightpurple);
   color: var(--darkpurple);
@@ -168,6 +154,16 @@ a:hover {
   max-height: 100%;
   height: 50px;
   padding: 0 5px;
+}
+
+
+/* link glow */
+.glow a:hover, .links-menu a:hover {
+  text-shadow: 
+  0 0 5px var(--red), 0 0 10px var(--red), 
+  0 0 20px var(--red), 0 0 40px var(--red);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 
 .container {
@@ -298,9 +294,7 @@ a:hover {
   background: linear-gradient(to right, rgba(255,255,255,0), #212121);
 }
 
-/* .logos:hover > .logos-slide{
-  animation-play-state: paused;
-} */
+
 
 .logos-slide {
   display: inline-block;
@@ -346,12 +340,10 @@ a:hover {
   padding: 14px 16px;
   background-color: var(--night);
   margin: 10px; 
-  
-  
 }
 
 
-/* Dropdown content (hidden by default) */
+/* Dropdown content */
 .dropdown-content {
   border-radius: 5px;
   display: none;
@@ -378,6 +370,7 @@ a:hover {
 } 
 
 
+/* my failed attempt at making the site responsive
 @media screen and (max-width: 800px){
   .card {
     width: 100%;
@@ -387,7 +380,7 @@ a:hover {
     flex-direction: column;
   }
   
-}
+} */
 
 /* homepage cards */
 .card {
@@ -422,6 +415,7 @@ a:hover {
   object-fit: fill;
 }
 
+/* nice glow and zoom on hover */
 .card:hover {
   box-shadow: 0px 0px 35px 2px var(--red);
   scale: 110%;
@@ -446,7 +440,6 @@ a:hover {
   transform: translateX(10%);
 }
 
-
 /* interesses pagina */
 .interesses-wrapper {
   display: grid;
@@ -470,4 +463,22 @@ a:hover {
 }
 .interesses-wrapper .text {
   column-span: 2;
+}
+
+/* grafisch pagina */
+.grafisch-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.grafisch-wrapper img {
+  width: 100%;
+}
+
+/* stages pagina */
+.stages-wrapper {            
+  text-align: left;
+  width: 50%;
+  margin: auto;
 }
