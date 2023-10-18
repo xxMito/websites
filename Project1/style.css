@@ -74,7 +74,7 @@ a:hover {
 /* Website Logo */
 .mylogo {
   width: 250px;
-  overflow: show;
+  overflow: visible;
   justify-content: center;
   margin: 25px auto;
 }
@@ -124,7 +124,7 @@ a:hover {
 /* top nav bar */
 .topnav {
   background-color: var(--night);
-  overflow: show;
+  overflow: visible;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -317,7 +317,7 @@ a:hover {
 
 /* image lightbox */
 .lightbox {
-  display: hidden;
+  display: none;
 }
 
 .lightbox:target {
@@ -440,6 +440,37 @@ a:hover {
   transform: translateX(10%);
 }
 
+/* CV */
+.cv {
+  width: 60%;
+  margin: auto;
+}
+.scholen-met-maps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  gap: 20px;
+}
+.skills {
+  font-size: 23px;
+}
+.skills td, tr {
+  border: solid 2px;
+  border-radius: .2em;
+  padding: 10px;
+  text-align: center;
+}
+.skills th {
+  text-align: left;
+}
+caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 /* interesses pagina */
 .interesses-wrapper {
   display: grid;
@@ -449,11 +480,11 @@ a:hover {
   width: 80%;
   margin: auto;
 }
-#text-left {
+.text-left {
   grid-column-start: 1;
   grid-column-end: 3; 
 }
-#text-right {
+.text-right {
   grid-column-start: 2;
   grid-column-end: 4;
 }
@@ -461,9 +492,7 @@ a:hover {
   max-width: 100%;
   max-height: 100%;
 }
-.interesses-wrapper .text {
-  column-span: 2;
-}
+
 
 /* grafisch pagina */
 .grafisch-wrapper {
