@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="images/favicon.ico">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- topnav -->
+        <div class="topnav glow">
+            <a href="index.html" ><img src="images/Home/logo_hr.png" alt="Mito"> </a>
+            <a href="index.html">Home</a>
+            
+            
+            <div class="dropdown">
+                <a href="ervaring.html">Ervaring 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </a>
+                <div class="dropdown-content">
+                    <a href="development.html">Development</a>
+                    <a href="grafisch.html">Grafisch</a>
+                    <a href="stages.html">Stages</a>
+                </div>
+            </div>
+
+
+            <a href="cv.html">CV</a>
+            <a href="interesses.html">Interesses</a>
+            <a href="contact.html" style="float: right;">Contact</a>
+        </div>
+    </header>
+
+
+
+    <div class="content">
+        <div class="mylogo">
+            <img src="images/Home/logo_hr.png" alt="Mito">
+        </div>
+        <!-- page title -->
+        <hr>
+        <h1 class="pagetitle">Welcome to my website!</h1>
+        <hr>
+        <!-- some spacing -->
+        <br>
+        <div class="page-description">
+            <h3>
+                Hey! Mijn naam is Mito, ik ben 21 jaar en ik studeer programmeren bij Thomas More.<br><br>
+                Ik studeerde voor Thomas More in De Lift Education in Diest. Hier kreeg ik een brede basis in programmeren, alsook in veel grafische programma's.<br><br>
+                Ik ben geinteresseerd in verschillende gebieden binnen IT zoals full stack development, illustreren, 3D and grafisch ontwerp. 
+                Ik vind van mezelf dat ik goed ben in nieuwe dingen leren, en ik vind het altijd leuk om met nieuwe dingen te experimenteren. 
+                <br><br>
+
+            </h3>
+        </div>
+        <!-- some spacing -->
+        <br><br><br>
+            <div class="card-slider">
+                <!-- hier komen boxes of 'cards' met info en een knop onderaan die naar de page navigeert -->
+                <div class="card">
+                    <img src="images/hobbies_interesses/fly_epic.jpg" alt="Thumbnail" style="width:100%">
+                    <div class="card-container">
+                      <p>Lees meer over wat ik graag doe in mijn vrije tijd!</p>
+                    </div>
+                    <button onclick="window.location.href='interesses.html';">Mijn interesses</button>
+                </div>
+                <div class="card">
+                    <img src="images/ervaring/programming.jpg" alt="Thumbnail" style="width:100%">
+                    <div class="card-container">
+                      <p>Kom meer te weten over mijn ervaring en bekijk projecten. </p>
+                    </div>
+                    <button  onclick="window.location.href='ervaring.html';">Ervaring</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/ervaring/smart.png" alt="Thumbnail" style="width:100%">
+                    <div class="card-container">
+                        <p>Hier kan je mijn professionele CV terugvinden</p>
+                    </div>
+                    <button onclick="window.location.href='cv.html';">CV</button>
+                </div>
+            </div>
+        <br><br><br>
+    </div>
+</body>
+</html>

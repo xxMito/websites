@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="images/favicon.ico">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- topnav -->
+        <div class="topnav glow">
+            <a href="index.html" ><img src="images/Home/logo_hr.png" alt="Mito"> </a>
+            <a href="index.html">Home</a>
+            
+            
+            <div class="dropdown">
+                <a href="ervaring.html">Ervaring 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </a>
+                <div class="dropdown-content">
+                    <a href="development.html">Development</a>
+                    <a href="grafisch.html">Grafisch</a>
+                    <a href="stages.html">Stages</a>
+                </div>
+            </div>
+
+
+            <a href="cv.html">CV</a>
+            <a href="interesses.html">Interesses</a>
+            <a href="contact.html" style="float: right;">Contact</a>
+        </div>
+    </header>
+
+<div class="content">
+
+
+    
+    <div class="contactform">
+        <h3>Je kan mij altijd bereiken via email!</h3>
+        <cite>r1002659@student.thomasmore.be</cite>
+<br> <br>
+        <h4>Of vul het onderstaande formulier in om een bericht te verzenden</h4>
+        <form action="https://tm-statweb.be/sendmail.php" method="post" enctype="application/x-www-form-urlencoded">
+            
+            <div><label for="naam">Naam</label></div>
+            <div><input type="text" id="naam" name="naam"></div>
+            
+            <div><label for="email">Email-adres</label></div>
+            <div><input type="email" id="email" name="email" required></div>
+            <div><label for="subject">Onderwerp: </label></div>
+            <div><input type="text" id="subject" name="subject" required></div>
+            <div><label for="message">Bericht: </label></div>
+            <div><textarea name="message" id="message" cols="40" rows="5" required></textarea></div>
+    
+            <input type="hidden" name="studentemail" value="r1002659@student.thomasmore.be">    
+            <div><input type="submit" value="Verzenden"></div>
+        </form>
+    </div>
+</div>
+
+    
+</body>
+</html>

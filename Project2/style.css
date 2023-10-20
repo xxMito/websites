@@ -1,0 +1,513 @@
+/* algemene styling */
+:root {
+  --black: #101010;
+  --night: #272727;
+  --red: #9b1d60;
+  --lightpurple: #beaae5;
+  --darkpurple: #4a3c90;
+  --lightgrey: #a8b0bd;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+
+  background: #101010;
+  color: #cdcdcd;
+  font-family: 'Saira Semi Condensed', sans-serif; 
+}
+
+hr {
+  border-color: var(--darkpurple);
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  width: 30%;
+  margin: auto;
+}
+.page-description {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+
+}
+
+.pagetitle {
+  text-align: center;
+}
+
+.content {
+  padding-top: 10%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* links */
+a {
+  color: var(--lightpurple);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--red);
+}
+
+/* development page */
+.development-title {
+  padding-top: 6%;
+}
+.development-title h1 {
+  padding: 5px;
+}
+.development-content {
+  width: 60%;
+  margin: auto;
+}
+
+
+/* Website Logo */
+.mylogo {
+  width: 250px;
+  overflow: visible;
+  justify-content: center;
+  margin: 25px auto;
+}
+
+.mylogo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.mylogo:hover img {
+  animation-iteration-count: 1;
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0% {
+      transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(.8, .6);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+} 
+
+/* contact form */
+.contactform {
+  margin: 20px;
+  border: none;
+}
+
+.contactform input {
+  border: solid var(--darkpurple);
+    
+  border-radius: 0.5em;
+  font-family: 'Saira Semi Condensed', sans-serif; 
+
+}
+
+.contactform input:invalid {
+  border: solid var(--red);
+  background-color: var(--red);
+}
+
+/* top nav bar */
+.topnav {
+  background-color: var(--night);
+  overflow: visible;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+}
+.topnav a {
+  float: left;
+  color: var(--lightpurple);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
+}
+.topnav a.active {
+  background-color: var(--lightpurple);
+  color: var(--darkpurple);
+}
+.topnav a:hover {
+  color: white;
+}
+
+.topnav img {
+  margin: auto;
+  float: left;
+  padding:5px;
+  max-width: 100%;
+  max-height: 100%;
+  height: 50px;
+  padding: 0 5px;
+}
+
+
+/* link glow */
+.glow a:hover, .links-menu a:hover {
+  text-shadow: 
+  0 0 5px var(--red), 0 0 10px var(--red), 
+  0 0 20px var(--red), 0 0 40px var(--red);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.container {
+  padding: 10px;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, .25); */
+  border-radius: .5rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.links-menu {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.links-menu > div {
+  text-align: center;
+  width: 100px;
+}
+
+.links-menu a {
+  font-size: 20px;
+  color: var(--lightgrey);
+  text-decoration: none;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+}
+
+/* image grid */
+.image-flexbox {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.image-flexbox img {
+  object-fit: cover;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.image-flexbox > span {
+  justify-content: center;
+}
+
+.image-text {
+  position: static;
+}
+
+
+/* logo slider */
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0;
+  background: #212121;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), #212121);
+}
+
+.logos:after {
+  right:0;
+  background: linear-gradient(to right, rgba(255,255,255,0), #212121);
+}
+
+
+
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+}
+
+@keyframes slide {
+  from  {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/* image lightbox */
+.lightbox {
+  display: none;
+}
+
+.lightbox:target {
+  display: block;
+}
+
+/* dropdown  */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  top:100px;
+  border: none;
+  outline: none;
+  color: var(--lightpurple);
+  padding: 14px 16px;
+  background-color: var(--night);
+  margin: 10px; 
+}
+
+
+/* Dropdown content */
+.dropdown-content {
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  background-color: var(--night);
+  min-width: 120px;
+  top: 60px;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: var(--lightpurple);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+
+
+/* my failed attempt at making the site responsive
+@media screen and (max-width: 800px){
+  .card {
+    width: 100%;
+  }
+  .card-slider{
+    width: 100%;
+    flex-direction: column;
+  }
+  
+} */
+
+/* homepage cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 10px;
+  background-color: var(--night);
+  height: 350px;
+  
+  
+}
+.card p {
+  height: 50px;
+
+}
+
+.card-slider {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
+.card-container {
+  padding: 10px;
+  max-width: 100%;
+}
+.card img {
+  border-radius: 10px;
+  height: 220px;
+  object-fit: fill;
+}
+
+/* nice glow and zoom on hover */
+.card:hover {
+  box-shadow: 0px 0px 35px 2px var(--red);
+  scale: 110%;
+}
+.card-container {
+  max-width: 100%;
+  text-align: center;
+}
+
+.card button{
+  background-color: var(--darkpurple);
+  color: var(--lightgrey);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 10px;
+  transform: translateX(10%);
+}
+
+/* CV */
+.cv {
+  width: 60%;
+  margin: auto;
+}
+.scholen-met-maps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  gap: 20px;
+}
+.skills {
+  font-size: 23px;
+}
+.skills td, tr {
+  border: solid 2px;
+  border-radius: .2em;
+  padding: 10px;
+  text-align: center;
+}
+.skills th {
+  text-align: left;
+}
+caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* interesses pagina */
+.interesses-wrapper {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  width: 80%;
+  margin: auto;
+}
+.text-left {
+  grid-column-start: 1;
+  grid-column-end: 3; 
+}
+.text-right {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.interesses-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* grafisch pagina */
+.grafisch-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.grafisch-wrapper img {
+  width: 100%;
+}
+
+/* stages pagina */
+.stages-wrapper {            
+  text-align: left;
+  width: 50%;
+  margin: auto;
+}
