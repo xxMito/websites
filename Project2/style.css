@@ -19,12 +19,14 @@ body
   margin: 0;
   padding: 0;
 
-  background: #101010;
-  color: #cdcdcd;
-  font-family: 'Saira Semi Condensed', sans-serif; 
+  background: #101010 !important;
+  color: #cdcdcd !important;
+  font-family: 'Saira Semi Condensed', sans-serif !important; 
 }
-
-hr {
+.my-jumbotron {
+  background-color: var(--lightgrey);
+}
+.purple-line {
   border-color: var(--darkpurple);
   border-radius: 5px;
   border-width: 2px;
@@ -43,7 +45,7 @@ hr {
   text-align: center;
 }
 
-.content {
+.my-content {
   padding-top: 10%;
   padding-left: 15px;
   padding-right: 15px;
