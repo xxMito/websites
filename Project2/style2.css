@@ -1,0 +1,94 @@
+/* algemene styling */
+:root {
+    --black: #101010;
+    --night: #272727;
+    --red: #9b1d60;
+    --lightpurple: #beaae5;
+    --darkpurple: #4a3c90;
+    --lightgrey: #a8b0bd;
+}
+
+body {
+    margin-top: 80px;
+    background-color: var(--black) !important;
+    color: var(--lightgrey) !important;
+    font-family: 'Saira Semi Condensed', sans-serif !important; 
+}
+
+.navbar-dark
+{
+    background-color: var(--night) !important;
+    color: var(--lightgrey) !important;
+}
+
+.bg-dark
+{
+    background-color: var(--night) !important;
+    color: var(--lightgrey) !important;
+}
+
+.navbar-dark > .container-fluid > .navbar-brand
+{
+    color: var(--lightpurple) !important;
+}
+
+.nav-link
+{
+    color: var(--lightpurple) !important;
+    font-size: 20px;
+}
+
+
+.dropdown-menu-dark {
+    background-color: var(--night) !important;
+    color: var(--lightpurple) !important;
+}
+
+
+.glowy a:hover {
+    text-shadow: 
+    0 0 5px var(--red), 0 0 10px var(--red), 
+    0 0 20px var(--red), 0 0 40px var(--red) !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+}
+
+.carousel-item > img {
+    object-fit:cover !important;
+  }
+.squareImage img {
+    aspect-ratio: 10/10;
+}
+#copyright {
+    background-color: var(--darkpurple);
+}
+#footer {
+    background-color: var(--night);
+}
+
+.bi {
+    color: var(--lightgrey);
+}
+
+/* .bi:hover {
+    color: var(--lightgrey);
+    /* text shadow */
+/* 
+} */ 
+.btn {
+    background-color: var(--darkpurple);
+    color: var(--lightgrey);
+    border: 2px solid var(--night);
+    border-radius: .5em;
+}
+.btn:hover {
+    background-color: var(--darkpurple);
+    color: var(--lightgrey);
+    border: 2px solid var(--red);
+    filter:drop-shadow(0 0 5px var(--red));
+}
+#footerTitle {
+    color: var(--lightgrey);
+    background-color: var(--darkpurple);
+    margin: 0;
+}
