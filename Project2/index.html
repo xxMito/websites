@@ -13,25 +13,85 @@
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="script" href="js/bootstrap.min.js">
-    
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- scroll reveal plugin -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>  
+
     <!-- eigen stylesheet -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css">
+    <script>
+        ScrollReveal().reveal('.container', {delay: 500});
+    </script>
 </head>
 <body>
-    
-   
-    <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top glowy">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/Home/logo_hr.png"  height="40px" alt="Mito">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ervaring</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="development.html">Development</a></li>
+                  <li><a class="dropdown-item" href="grafisch.html">Grafisch</a></li>
+                  <li><a class="dropdown-item" href="stages.html">Stages</a></li>
+                </ul>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">CV</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="interesses.html">Interesses</a>
+              </li>
+               
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </div>
+        </div>
+    </nav>
+    <!-- navbar -->
 
+    <!-- jumbotron -->
+    <div class="container">
         <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <h1 class="display-4">Welcome to my website!</h1>
+            <p class="lead">
+                Hey! Mijn naam is Mito, ik ben 21 jaar en ik studeer programmeren bij Thomas More.<br>
+                Ik studeerde voor Thomas More in De Lift Education in Diest. Hier kreeg ik een brede basis in programmeren, alsook in veel grafische programma's.
+                Ik ben geinteresseerd in verschillende gebieden binnen IT zoals full stack development, illustreren, 3D and grafisch ontwerp. Ik vind van mezelf dat ik goed ben in nieuwe dingen leren, en ik vind het altijd leuk om met nieuwe dingen te experimenteren. 
+
+            </p>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <p>Kom meer te weten</p>
+            <a class="btn btn-primary btn-lg" href="ervaring.html" role="button">Ervaring</a>
         </div>
     </div>
+    <!-- jumbotron -->
     
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          
+        </div>
+      </div>
+
+    </div>
+    
+
+
+
 
 </body>
 </html>
