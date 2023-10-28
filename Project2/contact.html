@@ -13,64 +13,142 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- eigen stylesheet -->
     <link rel="stylesheet" href="style2.css">  
+    <script src="vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <!-- sweet alert -->
+
 </head>
 <body>
-    <header>
-        <!-- topnav -->
-        <div class="topnav glow">
-            <a href="index.html" ><img src="images/Home/logo_hr.png" alt="Mito"> </a>
-            <a href="index.html">Home</a>
-            
-            
-            <div class="dropdown">
-                <a href="ervaring.html">Ervaring 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                    </svg>
-                </a>
-                <div class="dropdown-content">
-                    <a href="development.html">Development</a>
-                    <a href="grafisch.html">Grafisch</a>
-                    <a href="stages.html">Stages</a>
-                </div>
-            </div>
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top glowy">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/Home/logo_hr.png"  height="40px" alt="Mito">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ervaring</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="development.html">Development</a></li>
+              <li><a class="dropdown-item" href="grafisch.html">Grafisch</a></li>
+              <li><a class="dropdown-item" href="stages.html">Stages</a></li>
+            </ul>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="interesses.html">Interesses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        </ul>
+        
+      </div>
+    </div>
+</nav>
+<!-- navbar -->
 
-
-            <a href="cv.html">CV</a>
-            <a href="interesses.html">Interesses</a>
-            <a href="contact.html" style="float: right;">Contact</a>
+<!-- contactformulier -->
+<div class="container mb-5" id="contact-form">
+    <div class="row align-items-center g-lg-5 py-5">
+        <div class="col col-lg-6 text-center">
+            <img src="images/Home/logo_hr.png" width="400px" class="mb-3" alt="">
         </div>
-    </header>
-
-<div class="content">
-
-
-    
-    <div class="contactform">
-        <h3>Je kan mij altijd bereiken via email!</h3>
-        <cite>r1002659@student.thomasmore.be</cite>
-<br> <br>
-        <h4>Of vul het onderstaande formulier in om een bericht te verzenden</h4>
-        <form action="https://tm-statweb.be/sendmail.php" method="post" enctype="application/x-www-form-urlencoded">
+       
+        <ul class="col col-lg-6 list-inline mx-5 mx-md-auto " style="border-left: 2px dashed #333;">
             
-            <div><label for="naam">Naam</label></div>
-            <div><input type="text" id="naam" name="naam"></div>
             
-            <div><label for="email">Email-adres</label></div>
-            <div><input type="email" id="email" name="email" required></div>
-            <div><label for="subject">Onderwerp: </label></div>
-            <div><input type="text" id="subject" name="subject" required></div>
-            <div><label for="message">Bericht: </label></div>
-            <div><textarea name="message" id="message" cols="40" rows="5" required></textarea></div>
-    
-            <input type="hidden" name="studentemail" value="r1002659@student.thomasmore.be">    
-            <div><input type="submit" value="Verzenden"></div>
-        </form>
+            <br>
+            <div class="list-inline-item">
+                <span class="d-inline-flex align-items-center justify-content-center text-white rounded m-1 me-2" style="width: 40px; height: 40px;">
+                    <i class="bi bi-envelope-at-fill"></i>
+                </div><a href="mailto:r1002659@student.thomasmore.be">r1002659@student.thomasmore.be</a>
+            <br>
+             <div class="list-inline-item">
+                <span class="d-inline-flex align-items-center justify-content-center text-white rounded m-1 me-2" style="width: 40px; height: 40px;">
+                    <i class="bi bi-pen-fill"></i>
+                </div>HBO5 Graduaat Programmeren
+                <br>
+                <div class="list-inline-item">
+                    <span class="d-inline-flex align-items-center justify-content-center text-white rounded m-1 me-2" style="width: 40px; height: 40px;">
+                        <i class="bi bi-pin-map-fill"></i>                
+                    </div><a target="_blank" href="https://maps.app.goo.gl/qiY3mTsW7ggoa5oY7">Thomas More Lier</a>
+
+                <br>
+                <div class="list-inline-item">
+                    <span class="d-inline-flex align-items-center justify-content-center text-white rounded m-1 me-2" style="width: 40px; height: 40px;">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div><a href="tel:0498537153">+32 498 53 71 53</a>
+                
+    </div>
+        
+        <br>
+            
+        </ul>
+        
+        <div class="col-md-10 col-12 mx-auto col-lg-6">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 mb-3">
+                    Contact
+                </h1>
+                <p class="col-lg-12 fs-4">
+                    Vul het formulier in om een bericht te verzenden!
+                </p>
+            </div>
+            <form action="https://tm-statweb.be/sendmail.php" target="_blank" method="post" enctype="application/x-www-form-urlencoded" class="p4 px-6 p-md-5 border rounded-3 bg-dark">
+                
+                <div class="form-floating mb-3">
+                    <input required type="text" id="naam" name="naam" class="form-control"
+                    placeholder="naam">
+                    <label for="naam">Naam</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input required type="text" id="voornaam" name="voornaam" class="form-control"
+                    placeholder="voornaam">
+                    <label for="voornaam">Voornaam</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input required type="email" name="email" id="email" class="form-control"
+                    placeholder="example@mail.com">
+                    <label for="email">Email</label>
+                </div>
+
+                <!-- selectielijst -->
+                <div class="mb-3">
+                    <select required name="skill" id="skill" class="form-select">
+                        <option selected>Interesse in skill</option>
+                        <option value="Programmeren">Programmeren</option>
+                        <option value="grafisch">Grafisch ontwerp</option>
+                        <option value="illustraties">Commission Illustraties</option>
+                        <option value="webdesign">Webdesign</option>
+                        <option value="other">Anders</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="vraag..." name="vraag" id="vraag" rows="3"></textarea>
+                  </div>
+                
+                <div class="mb-3 mx-3 text-center text-md-start">
+                    <input type="hidden" name="studentemail" value="r1002659@student.thomasmore.be">
+                    <div><input type="submit" id="verzenden" value="Verzenden" name="verzenden" class="btn btn-primary"/></div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-    
+</div>
 </body>
 </html>

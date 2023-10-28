@@ -92,3 +92,22 @@ body {
     background-color: var(--darkpurple);
     margin: 0;
 }
+a {
+    color: var(--lightgrey);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--lightpurple);
+    text-decoration: underline 2px;
+}
+
+
+.carousel-item > img {
+    object-fit:cover;
+    aspect-ratio: 10/10;
+  }
+  #grafischCarousel {
+    width: 50%;
+    margin: auto;
+  }
+  
