@@ -4,142 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/icon" href="images/favicon.ico">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="script" href="js/bootstrap.min.js">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- eigen stylesheet -->
+    <link rel="stylesheet" href="style2.css">    
 </head>
 <body>
-    <header>
-        <!-- topnav -->
-        <div class="topnav glow">
-            <a href="index.html" ><img src="images/Home/logo_hr.png" alt="Mito"> </a>
-            <a href="index.html">Home</a>
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top glowy">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/Home/logo_hr.png"  height="40px" alt="Mito">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ervaring</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="development.html">Development</a></li>
+                  <li><a class="dropdown-item" href="grafisch.html">Grafisch</a></li>
+                  <li><a class="dropdown-item" href="stages.html">Stages</a></li>
+                </ul>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">CV</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="interesses.html">Interesses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>
             
-            
-            <div class="dropdown">
-                <a href="ervaring.html">Ervaring 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                    </svg>
-                </a>
-                <div class="dropdown-content">
-                    <a href="development.html">Development</a>
-                    <a href="grafisch.html">Grafisch</a>
-                    <a href="stages.html">Stages</a>
-                </div>
-            </div>
-
-
-            <a href="cv.html">CV</a>
-            <a href="interesses.html">Interesses</a>
-            <a href="contact.html" style="float: right;">Contact</a>
+          </div>
         </div>
-    </header>
+    </nav>
+    <!-- navbar -->
 
 
-    <div class="content">
-        <hr>
-        <h1 class="pagetitle">Mijn CV</h1>
-        <hr> 
-       
-        <!-- some spacing -->
-        <br><br><br>
-
-        <div class="cv">
-           
-            
-            <h1>Persoonlijke Eigenschappen</h1>
-            <p>
-                Ik ben leergierig en probeer altijd geinteresseerd mee te volgen en nieuwe dingen te leren. <br>
-                Als een opdracht me interesseerd wil ik me er in verdiepen en er veel over leren.
-                Ik respecteer graag regels en werkorde, en je kunt altijd rekenen op mijn eerlijke mening als je hierom vraagt.
-                Anderen helpen geeft me een goed gevoel, ik merk soms dingen op die anderen niet zien.
-                Orde en netheid zijn voor mij heel belangrijk.
-            </p>
-            <br>
-            <h1>Talenkennis</h1>
-            <p>Engels, Nederlands en een beetje Japans</p>
-            <br>
-                <table class="skills">
-                    <caption>Mijn skills</caption>
-                    <tr>
-                        <th>Skill</th>
-                        <th>Score</th>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>8/10</td>
-                    </tr>
-                    <tr>
-                        <td>MS Office</td>
-                        <td>9/10</td>
-                    </tr>
-                    <tr>
-                        <td>Adobe CC</td>
-                        <td>8/10</td>
-                    </tr>
-                    <tr>
-                        <td>Kotlin</td>
-                        <td>6/10</td>
-                    </tr>
-                    <tr>
-                        <td>Angular</td>
-                        <td>7/10</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>8/10</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>6/10</td>
-                    </tr>
-                    <tr>
-                        <td>Node</td>
-                        <td>4/10</td>
-                    </tr>
-
-                </table>
-            <br>
-            <h1>Opleiding</h1>
-            <p>
-                <span>
-                    Mijn middelbaar diploma heb ik behaald bij de examencommissie in Brussel, en het CVO in diest.
-                    <br>Momenteel studeer ik Graduaat Programmeren bij Thomas More in Lier.
-                </span>
-            </p>
-            <br>
-
-            <div class="scholen-met-maps">
-                
-                <div>
-                    
-                    <div>
-                        <h2>De Lift Education Diest</h2>
-                        IT-school voor jongeren met Autisme Spectrum Stoornis
-                        <br>
-                        Hier leerde ik programmeren, 2d/3d ontwerp/tekenen
-                    </div>
-                    <iframe width="300" height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.8421217068103!2d5.043106176548516!3d50.9837872488198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c13f2dcce522cb%3A0x4bcfb1ba86a3710f!2sDeLift%20Education!5e1!3m2!1sen!2sbe!4v1697457599289!5m2!1sen!2sbe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                </div>
-                <div>
-                    <div>
-                        <h2>Kindsheid Jesu Hasselt</h2>
-                        Middelbare school in Hasselt
-                        <br>Hier deed ik
-                        ASO Wetenschappen Wiskunde
-                    </div>
-                    <iframe width="300" height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.7821126474728!2d5.347252349805467!3d50.95167691957496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c12167888f99dd%3A0xdc30e45124db6c0f!2sScholen%20Kindsheid%20Jesu!5e1!3m2!1sen!2sbe!4v1697457580122!5m2!1sen!2sbe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-</div>
 </body>
 </html>

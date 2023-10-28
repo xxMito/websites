@@ -10,90 +10,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="script" href="js/bootstrap.min.js">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- eigen stylesheet -->
+    <link rel="stylesheet" href="style2.css">
+
 </head>
 <body>
-    <header>
-        <!-- topnav -->
-        <div class="topnav glow">
-            <a href="index.html" ><img src="images/Home/logo_hr.png" alt="Mito"> </a>
-            <a href="index.html">Home</a>
-            
-            
-            <div class="dropdown">
-                <a href="ervaring.html">Ervaring 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                    </svg>
-                </a>
-                <div class="dropdown-content">
-                    <a href="development.html">Development</a>
-                    <a href="grafisch.html">Grafisch</a>
-                    <a href="stages.html">Stages</a>
-                </div>
-            </div>
 
-
-            <a href="cv.html">CV</a>
-            <a href="interesses.html">Interesses</a>
-            <a href="contact.html" style="float: right;">Contact</a>
-        </div>
-    </header>
-
-    <div class="content">
-        <hr>
-        <h1 class="pagetitle">Grafisch</h1>
-        <hr> 
-        <!-- some spacing -->
-        <br>
-        <div class="page-description">
-            <h3>
-                Hier vind je veel van mijn creatieve projectjes!
-            </h3>
-        </div>
-        <!-- some spacing -->
-        <br><br><br>
-
-        <!-- over pretparken -->
-        <div class="grafisch-wrapper">
-
-            <!-- Illustraties -->
-            <div class="text text-left">
-              <h1>Illustraties</h1>
-            </div>
-            <div>
-                <p>Concept art voor een manga die ik wou maken</p>
-                <img src="images/ervaring/grafisch/mito-schetsen.jpg" alt="Concept art voor een animatie">
-                <p>Een van mijn eerste digitale tekeningen</p>
-                <img src="images/ervaring/grafisch/tailred.png" alt="Een van mijn eerste digitale tekeningen">
-                <p>Spooky ^-^</p>
-                <img src="images/ervaring/grafisch/spowoky.png" alt="Spooky Illustratie">
-                <p>Mijn eigen Osu! logo</p>
-                <img src="images/ervaring/grafisch/osu.png" alt="Spooky Illustratie">
-                <p>Een illustratie van Toga (my hero academia)</p>
-                <img src="images/ervaring/grafisch/toga.png" alt="Toga van MHA">
-            </div>
-
-            <br><br><br>
-            <!-- 3D -->
-            <div class="text text-left">
-                <h1>3D</h1>
-              </div>
-              <div>
-                  <p>Straten en borden voor een verkeers-cursus</p>
-                  <img src="images/ervaring/grafisch/autorijden.png" alt="3D verkeers-modellen">
-                 
-                  
-              </div>
-
-        
-        </div>
-        <!-- spacing -->
-    <div><br><br><br></div>
-
-       
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top glowy">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="images/Home/logo_hr.png"  height="40px" alt="Mito">
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ervaring</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="development.html">Development</a></li>
+            <li><a class="dropdown-item" href="grafisch.html">Grafisch</a></li>
+            <li><a class="dropdown-item" href="stages.html">Stages</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="cv.html">CV</a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link" href="interesses.html">Interesses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      </ul>
+      
     </div>
+  </div>
+</nav>
+<!-- navbar -->
+
+  <div id="grafischCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#grafischCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#grafischCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#grafischCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/ervaring/grafisch/osu.png" class="d-block w-100" alt="Osu">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/ervaring/grafisch/spowoky.png" class="d-block w-100" alt="Spooky">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Osu Logo</h5>
+          <p>Ik heb dit gemaakt om met Adobe Illustrator te oefenen. Je kan in de rhythm-game Osu! zelf ook je eigen assets toevoegen.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/ervaring/grafisch/toga.png" class="d-block w-100" alt="Toga">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#grafischCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#grafischCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </body>
 </html>
