@@ -104,10 +104,75 @@ a:hover {
 
 .carousel-item > img {
     object-fit:cover;
-    aspect-ratio: 10/10;
-  }
-  #grafischCarousel {
-    width: 50%;
-    margin: auto;
+    aspect-ratio: 16/9;
+}
+
+#grafischCarousel {
+width: 50%;
+margin: auto;
+}
+
+.carousel-caption{
+    background-color: var(--night);
+    border-radius: .5rem;
+}
+
+/* cards */
+.card-img-top {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+
+/* logo slider */
+
+.logos {
+    overflow: hidden;
+    padding: 30px 0;
+    background: #212121;
+    white-space: nowrap;
+    position: relative;
   }
   
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), #212121);
+  }
+  
+  .logos:after {
+    right:0;
+    background: linear-gradient(to right, rgba(255,255,255,0), #212121);
+  }
+  
+  
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 100px;
+    margin: 0 40px;
+  }
+  
+  @keyframes slide {
+    from  {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+  }
