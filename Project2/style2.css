@@ -111,3 +111,11 @@ a:hover {
     margin: auto;
   }
   
+
+  /* text gradient */
+  .gradient {
+    font-size: 40px;
+    background: linear-gradient(319deg, rgba(255,255,255,1) 0%, rgba(156,156,248,1) 46%, rgba(232,70,137,1) 100%);     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
