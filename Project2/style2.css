@@ -53,6 +53,16 @@ body {
     text-decoration-thickness: 3px !important;
 }
 
+/* jumbotron homepage */
+.jumbotron > .btn:hover {
+    text-decoration: none;
+    color: var(--lightpurple);
+    border: 3px solid;
+    filter:drop-shadow(0 0 10px var(--darkpurple));
+    background-color: var(--darkpurple);
+}
+
+
 .carousel-item > img {
     object-fit:cover !important;
   }
@@ -112,8 +122,8 @@ width: 50%;
 margin: auto;
 }
 
-.carousel-caption{
-    background-color: var(--night);
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.35);
     border-radius: .5rem;
 }
 
@@ -122,6 +132,14 @@ margin: auto;
     width: 100%;
     height: 350px;
     object-fit: cover;
+}
+.card:hover {
+    box-shadow: 0 0 16px 8px var(--red);
+    scale: 102%;
+    transition: 0.3s;
+}
+.card a:hover {
+    text-decoration: none;
 }
 
 
@@ -180,7 +198,11 @@ margin: auto;
   /* text gradient */
   .gradient {
     font-size: 40px;
-    background: linear-gradient(319deg, rgba(255,255,255,1) 0%, rgba(156,156,248,1) 46%, rgba(232,70,137,1) 100%);     background-clip: text;
+    border: 3px solid var(--darkpurple);
+    background: linear-gradient(319deg, rgba(255,255,255,1) 0%, rgba(156,156,248,1) 46%, rgba(232,70,137,1) 100%);     
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+
